@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices | LITS College Butwal</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===== FONTS & ICONS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<title>Notices | LITS College Butwal</title>
-
-<link rel="stylesheet" href="notices.css">
-
+    <!-- CSS stylesheet link -->
+    <link rel="stylesheet" href="notices.css">
 </head>
-<body>
+<body class="bg-slate-50">
 
 <!-- ===== HEADER ===== -->
 <header class="header">
     <div class="container header-flex">
-        <h1>LITS College Butwal</h1>
-        <nav>
+        <!-- Logo Branding -->
+        <a href="index.html" class="logo">
+            <span class="logo-text">LITS College Butwal</span>
+            <span class="logo-sub">Lumbini Institute of Technical Sciences</span>
+        </a>
+        <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="notices.html" class="active">Notices</a>
-            <a href="#">Admissions</a>
-            <a href="#">Contact</a>
+            <a href="index.html#admissions">Admissions</a>
+            <a href="index.html#contact">Contact</a>
         </nav>
     </div>
 </header>
@@ -28,44 +36,91 @@
 
 <!-- ===== PAGE TITLE ===== -->
 <section class="page-title">
-    <h2>College Notices</h2>
-    <p>Latest announcements from Lumbini Institute of Technical Sciences</p>
+    <div class="container title-content text-center">
+        <span class="category-tag">Official Announcements</span>
+        <h2>College Notices</h2>
+        <p>Stay informed with the latest updates, academic calendars, and exams from LITS</p>
+    </div>
 </section>
 
 
 <!-- ===== NOTICE GRID ===== -->
 <section class="notice-grid-section">
-<div class="container notice-grid">
+    <div class="container notice-grid">
 
-    <!-- notice item -->
-    <div class="notice-card">
-        <img src="Assets/notices/1.jpg" onclick="openModal(this.src)">
+        <!-- Notice Card 1 -->
+        <div class="notice-card" onclick="openModal('Assets/notices/1.jpg')">
+            <div class="img-wrapper">
+                <img src="Assets/notices/1.jpg" alt="Academic Notice 1" onerror="this.src='https://placehold.co/800x1100/f1f5f9/0f172a?text=Academic+Notice+1'">
+                <div class="hover-overlay">
+                    <span class="zoom-btn"><i class="fa-solid fa-expand"></i> View Full Notice</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="date"><i class="fa-solid fa-calendar-day"></i> Latest Notice</span>
+            </div>
+        </div>
+
+        <!-- Notice Card 2 -->
+        <div class="notice-card" onclick="openModal('Assets/notices/2.jpg')">
+            <div class="img-wrapper">
+                <img src="Assets/notices/2.jpg" alt="Academic Notice 2" onerror="this.src='https://placehold.co/800x1100/f1f5f9/0f172a?text=Academic+Notice+2'">
+                <div class="hover-overlay">
+                    <span class="zoom-btn"><i class="fa-solid fa-expand"></i> View Full Notice</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="date"><i class="fa-solid fa-calendar-day"></i> Announcement</span>
+            </div>
+        </div>
+
+        <!-- Notice Card 3 -->
+        <div class="notice-card" onclick="openModal('Assets/notices/3.jpg')">
+            <div class="img-wrapper">
+                <img src="Assets/notices/3.jpg" alt="Academic Notice 3" onerror="this.src='https://placehold.co/800x1100/f1f5f9/0f172a?text=Academic+Notice+3'">
+                <div class="hover-overlay">
+                    <span class="zoom-btn"><i class="fa-solid fa-expand"></i> View Full Notice</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="date"><i class="fa-solid fa-calendar-day"></i> Event Update</span>
+            </div>
+        </div>
+
+        <!-- Notice Card 4 -->
+        <div class="notice-card" onclick="openModal('Assets/notices/4.jpg')">
+            <div class="img-wrapper">
+                <img src="Assets/notices/4.jpg" alt="Academic Notice 4" onerror="this.src='https://placehold.co/800x1100/f1f5f9/0f172a?text=Academic+Notice+4'">
+                <div class="hover-overlay">
+                    <span class="zoom-btn"><i class="fa-solid fa-expand"></i> View Full Notice</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="date"><i class="fa-solid fa-calendar-day"></i> Exam Schedule</span>
+            </div>
+        </div>
+
+        <!-- Notice Card 5 -->
+        <div class="notice-card" onclick="openModal('Assets/notices/5.jpg')">
+            <div class="img-wrapper">
+                <img src="Assets/notices/5.jpg" alt="Academic Notice 5" onerror="this.src='https://placehold.co/800x1100/f1f5f9/0f172a?text=Academic+Notice+5'">
+                <div class="hover-overlay">
+                    <span class="zoom-btn"><i class="fa-solid fa-expand"></i> View Full Notice</span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <span class="date"><i class="fa-solid fa-calendar-day"></i> CTEVT Update</span>
+            </div>
+        </div>
+
     </div>
-
-    <div class="notice-card">
-        <img src="Assets/notices/2.jpg" onclick="openModal(this.src)">
-    </div>
-
-    <div class="notice-card">
-        <img src="Assets/notices/3.jpg" onclick="openModal(this.src)">
-    </div>
-
-    <div class="notice-card">
-        <img src="Assets/notices/4.jpg" onclick="openModal(this.src)">
-    </div>
-
-    <div class="notice-card">
-        <img src="Assets/notices/5.jpg" onclick="openModal(this.src)">
-    </div>
-
-</div>
 </section>
 
 
 <!-- ===== FULLSCREEN MODAL ===== -->
-<div id="imgModal" class="img-modal">
-    <span class="close" onclick="closeModal()">×</span>
-    <img id="modalImg">
+<div id="imgModal" class="img-modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" class="modal-content" onclick="event.stopPropagation()">
 </div>
 
 
@@ -73,38 +128,39 @@
 <footer class="footer">
     <div class="container footer-grid">
 
-        <div>
+        <div class="footer-col">
             <h3>LITS College</h3>
             <p>
-                Lumbini Institute of Technical Sciences  
-                Chandbari (Chandra Path), Butwal  
-                Phone: 985-7034843
+                Lumbini Institute of Technical Sciences<br>
+                Chandbari (Chandra Path), Butwal<br>
+                <strong>Phone:</strong> <a href="tel:+9779857034843">985-7034843</a>
             </p>
         </div>
 
-        <div>
+        <div class="footer-col">
             <h3>Quick Links</h3>
-            <a href="#">Admissions</a>
-            <a href="#">Programs</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <div class="footer-links-list">
+                <a href="index.html#admissions"><i class="fa-solid fa-chevron-right text-xs"></i> Admissions</a>
+                <a href="index.html#programs"><i class="fa-solid fa-chevron-right text-xs"></i> Programs</a>
+                <a href="index.html#gallery"><i class="fa-solid fa-chevron-right text-xs"></i> Gallery</a>
+                <a href="index.html#contact"><i class="fa-solid fa-chevron-right text-xs"></i> Contact</a>
+            </div>
         </div>
 
-        <div>
-            <h3>Programs</h3>
-            <p>Health Assistant (HA)</p>
-            <p>Radiography</p>
-            <p>Physiotherapy</p>
-            <p>Civil Sub Overseer</p>
+        <div class="footer-col">
+            <h3>CTEVT Streams</h3>
+            <p><i class="fa-solid fa-circle-chevron-right text-xs text-amber-500 mr-1"></i> Health Assistant (HA)</p>
+            <p><i class="fa-solid fa-circle-chevron-right text-xs text-amber-500 mr-1"></i> PCL Radiography</p>
+            <p><i class="fa-solid fa-circle-chevron-right text-xs text-amber-500 mr-1"></i> PCL Physiotherapy</p>
+            <p><i class="fa-solid fa-circle-chevron-right text-xs text-amber-500 mr-1"></i> Diploma in Pharmacy</p>
         </div>
 
     </div>
 
     <div class="copyright">
-        © 2026 LITS College Butwal
+        &copy; 2026 Lumbini Institute of Technical Sciences | Butwal, Nepal
     </div>
 </footer>
-
 
 <script src="notices.js"></script>
 </body>
