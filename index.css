@@ -462,3 +462,37 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==========================================================================
+   LEADERSHIP ALTERNATING HIGHLIGHTS
+   ========================================================================== */
+.leadership-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+.portrait-wrapper img {
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+
+.portrait-wrapper:hover img {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 1024px) {
+  .leadership-row {
+    text-align: center;
+  }
+  
+  .leadership-row .leadership-text-col {
+    align-items: center;
+  }
+}
